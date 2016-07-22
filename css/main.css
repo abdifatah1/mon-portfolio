@@ -101,13 +101,19 @@ Author's custom styles
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
+  border-radius: 2%;
 }
 
 .nav{
   font-weight: bold;
-  font-size: 25px;
-  color: grewy;
-  text-align: center;
+  display: flex;
+  justify-content:space-between;
+}
+
+.nav a{
+  border-radius:45px;
+  font-size: 30px;
+  color: green;
 }
 
 
@@ -117,11 +123,24 @@ Author's custom styles
 
 
 
+/*=================================================
+start of contact style
+===================================================*/
+
+.contact{
+  text-align: center;
+}
+nav{
+  display:flex;
+  justify-content: space-around;
+}
 
 
 
 
-
+/*=================================================
+end of contact style
+===================================================*/
 
 
 /* ==========================================================================
