@@ -93,28 +93,51 @@ Browser Upgrade Prompt
 
 /* ==========================================================================
 Author's custom styles
+smartphone
 ========================================================================== */
-/*=============header background image===========*/
-
-.header-image{
-  background-image: url(../img/header.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 300px;
-  border-radius: 2%;
+body{
+  background-color: Azure !important;
 }
 
+/*=============header background image===========*/
+.quotes{
+  font: 35px bold;
+  text-align: center;
+  padding-top: 5%;
+
+}
+/*.header-image{
+background-image: url(../img/header.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+height: 600px;
+border-radius: 2%;
+}*/
+
+
+/*==================nav=============*/
 .nav{
   font-weight: bold;
   display: flex;
-  justify-content:space-between;
+  padding-top: 10%;
+  text-align: center;
 }
 
 .nav a{
-  border-radius:45px;
-  font-size: 30px;
-  color: green;
+  font-size: 2em;
+  /*padding:0 50px;*/
+  border-radius: 5px;
+  color: black;
+  text-decoration: underline;
 }
+
+.mes-travaux{
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
 
 
 
@@ -124,16 +147,19 @@ Author's custom styles
 
 
 /*=================================================
-start of contact style
+start of contact or footer style
 ===================================================*/
 
-.contact{
+#contact{
   text-align: center;
 }
-nav{
+#contact nav{
   display:flex;
   justify-content: space-around;
+  flex-wrap: nowrap;
 }
+
+
 
 
 
@@ -223,8 +249,63 @@ These examples override the primary ('mobile first') styles.
 Modify as content requires.
 ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 47.9em) {
   /* Style adjustments for viewports that meet the condition */
+
+  .header-image{
+    background-image: url(../img/header.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height: 600px;
+    border-radius: 2%;
+  }
+  .quotes{
+    display: none;
+  }
+
+  /*==================nav=============*/
+  .nav{
+    font-weight: bold;
+    display: flex;
+    justify-content:space-between;
+    padding-top: 30%;
+  }
+
+  .nav a{
+    background: skyblue;
+    font-size: 2em;
+    padding:0 50px;
+    border-radius: 5px;
+    color: white;
+  }
+
+
+
+
+
+
+
+  /*=================================================
+  start of contact and footer style
+  ===================================================*/
+
+  #contact{
+    /*text-align: center;*/
+  }
+  #contact nav{
+    display:flex;
+    justify-content: space-around;
+  }
+
+
+
+
+  /*=================================================
+  end of contact style
+  ===================================================*/
+
+
 }
 
 @media print,
